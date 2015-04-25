@@ -1,4 +1,5 @@
 .env*/
+.venv*/
 charfinder_index.pickle
 
 # Byte-compiled / optimized / DLL files
