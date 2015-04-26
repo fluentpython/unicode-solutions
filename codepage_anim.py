@@ -5,16 +5,17 @@ http://effbot.org/tkinterbook/canvas.htm
 
 from __future__ import unicode_literals
 
-try:
-    # python 2.6
+import sys
+
+if sys.version_info.major == 2:
     import Tkinter as tk
     def bytecar(cod):
         return chr(cod)
-except ImportError:
-    # python 3
+else:
     import tkinter as tk
     def bytecar(cod):
         return bytes([cod])
+
 
 import sys
 import math
@@ -82,7 +83,7 @@ class Glifo(object):
         self.y = self.y_dest
         self.vx = self.vy = self.ax = self.ay = 0
         del Glifo.movendo[self.unicar]
-        if hasattr(self, 'saindo') and self.saindo:
+        if hasattr(self, u'saindo') and self.saindo:
             del Glifo.ativos[self.unicar]
             self.canvas.delete(self.handle)
 
