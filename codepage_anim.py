@@ -133,7 +133,7 @@ class Janela(tk.Tk):
                     unicar = bytecar(i*16+j).decode(encoding, 'ignore')
                     if not unicar:
                         continue
-                    if i == 8 and j == 5 and unicar == '\x85':
+                    if i == 8 and j == 5 and unicar == u'\x85':
                         continue # ignorar gremlim na forma de &Aacute; dentro de um quadrado
                     glifo = Glifo.ativos.get(unicar)
                     if glifo is None:
