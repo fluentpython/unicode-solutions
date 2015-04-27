@@ -24,9 +24,10 @@ CEL = 40
 LATERAL = CEL * 6
 DIST_APROX = 2 # distancia considerada suficientemente proxima para ser igual
 
-ESTILO_ROTULO = dict(anchor='center', font='courier 24', fill='gray')
-ESTILO_CAR = dict(anchor='center', font='times 32', fill='black')
-ESTILO_LEGENDA = dict(anchor='w', font='helvetica 32', fill='black')
+# sizes: 24, 32
+ESTILO_ROTULO = dict(anchor='center', font='courier 18', fill='gray')
+ESTILO_CAR = dict(anchor='center', font='times 24', fill='black')
+ESTILO_LEGENDA = dict(anchor='w', font='helvetica 24', fill='black')
 
 CODEPAGES = ['ASCII',
     'cp437', 'cp850', 'MacRoman', 'ISO-8859-1',
