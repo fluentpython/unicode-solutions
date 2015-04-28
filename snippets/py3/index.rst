@@ -91,8 +91,7 @@ Coping with ``UnicodeDecodeError``:
 >>> octets.decode('utf_8')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 5:
-invalid continuation byte
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 5: invalid continuation byte
 >>> octets.decode('utf_8', errors='replace')
 'Montr�al'
 

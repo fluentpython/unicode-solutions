@@ -97,7 +97,6 @@ MontrИal
 Traceback (most recent call last):
   ...
 UnicodeDecodeError: 'utf8' codec can't decode byte 0xe9 in position 5: invalid continuation byte
-
 >>> octets.decode('utf_8', errors='replace') == u'Montr�al'
 True
 >>> print octets.decode('utf_8', errors='replace')
