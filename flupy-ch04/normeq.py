@@ -12,6 +12,7 @@ Using Normal Form C, case sensitive:
     >>> nfc_equal('A', 'a')
     False
 
+
 Using Normal Form C with case folding:
 
     >>> s3 = 'Straße'
