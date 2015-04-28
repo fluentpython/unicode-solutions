@@ -46,3 +46,14 @@ bytearray(b'caf\xc3\xa9')
 >>> octet_arr[-1:]
 bytearray(b'\xa9')
 
+
+Essential codecs:
+
+>>> for codec in ['latin_1', 'utf_8', 'utf_16']:
+...     print '{:8} {!r}'.format(codec, u'El Niño'.encode(codec))
+...
+latin_1  'El Ni\xf1o'
+utf_8    'El Ni\xc3\xb1o'
+utf_16   '\xff\xfeE\x00l\x00 \x00N\x00i\x00\xf1\x00o\x00'
+
+
